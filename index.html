@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      *{
+        cursor: none;
+      }
+      .wrapper{
+        cursor: url('./src/assets/custom-cursor.png'), auto;
+    
+      }
+
+      .cursor{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #eee;
+        background: transparent;
+        left: 0;
+        pointer-events: none;
+      }
+
+      *:hover{
+        
+        cursor: url('./src/assets/custom-cursor.png'), auto;
+      }
+
+      a:hover .cursor{
+        width: 80px;
+        height: 80px;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="root"></div>
+      <div class="cursor"></div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="./src/utils/cursor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  background-color:#000;
+  scrollbar-width:thin;
+  scrollbar-color: #d8c72e #000;
+}
+
+#nav-text{
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.glow {
+  text-shadow: 0 0px 0px #FFA500, 0 0 0px #FFA500, 0 0 30px #FFA500, 0 0 5px #FFA500, 0 0 30px #FFA500, 0 0px 5px #FFA500, 0 -5px 10px #FFA500;
+}
+.glow-effect {
+  text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #FFA500, 0 0 40px #FFA500, 0 0 50px #FFA500, 0 0 60px #FFA500, 0 0 70px #FFA500;
+  animation: glow 1.5s infinite alternate;
+}
+
+.logo{
+  opacity: 0;
+  transform: translateY(-100px) ;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500, 0 0 20px #FFA500, 0 0 25px #FFA500, 0 0 30px #FFA500, 0 0 35px #FFA500;
+  }
+  to {
+    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #FFA500, 0 0 40px #FFA500, 0 0 50px #FFA500, 0 0 60px #FFA500, 0 0 70px #FFA500;
+  }
+}
+
+#hrtag{
+  box-shadow: rgba(94, 89, 35, 0.4) 0px 0px 10px 13px;
+  animation: hrglow 1.5s infinite alternate;
+}
+
+@keyframes hrglow {
+  from {
+    box-shadow: rgba(94, 89, 35, 0.4) 0px 0px 14px 18px;
+  }
+  to {
+    box-shadow: rgba(94, 89, 35, 0.4) 0px 0px 10px 13px;
+  }
+}
+
+
+#worklink{
+  box-shadow: rgba(152, 207, 148, 0.4) 0px 0px 10px 10px;
+}
+
+#root{
+  cursor: url('./assets/custom-cursor.png') auto;
+}
