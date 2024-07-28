@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio-main/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      *{
+        cursor: none;
+      }
+      .wrapper{
+        cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgBhU/BDYAgDCyyACO4gpu4KXEC3EA3kR8BArVn9GEickmbS+/S3BEJQghjSsnJHDIcY7S4QVMgWutNuKE3fCllUjlny8wzfWNVeElt+AHrx2Bg2FtqrXXphrwYTKiGPHdV99Q8AY5+TE5Glps3AAAAAElFTkSuQmCC'), auto;
+    
+      }
+
+      .cursor{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #eee;
+        background: transparent;
+        left: 0;
+        pointer-events: none;
+      }
+
+      *:hover{
+        
+        cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgBhU/BDYAgDCyyACO4gpu4KXEC3EA3kR8BArVn9GEickmbS+/S3BEJQghjSsnJHDIcY7S4QVMgWutNuKE3fCllUjlny8wzfWNVeElt+AHrx2Bg2FtqrXXphrwYTKiGPHdV99Q8AY5+TE5Glps3AAAAAElFTkSuQmCC'), auto;
+      }
+
+      a:hover .cursor{
+        width: 80px;
+        height: 80px;
+      }
+
+    
+    </style>
+    <script type="module" crossorigin src="/Portfolio-main/assets/index-Bxe5gM4v.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio-main/assets/index-Cbx0kc4C.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="root"></div>
+      <div class="cursor"></div>
+    </div>
+    <script src="./src/utils/cursor.js"></script>
+  </body>
+</html>
