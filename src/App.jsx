@@ -12,10 +12,10 @@ function App() {
     <>
      <Navbar/>
      <Routes>
-    <Route path='/' element={<Home/>} />
-    <Route path='/about' element={<About/>} />
-    <Route path='/work' element={<Work/>} />
-    <Route path='/work/:id' element={<SingleWork/>} />
+    <Route path='/Portfolio-main' element={<Home/>} />
+    <Route path='/Portfolio-main/about' element={<About/>} />
+    <Route path='/Portfolio-main/work' element={<Work/>} />
+    <Route path='/Portfolio-main/work/:id' element={<SingleWork/>} />
      
      </Routes>
      <Footer/>

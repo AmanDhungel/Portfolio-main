@@ -34,7 +34,7 @@ const Work = () => {
             <div className="flex flex-col ml-10 gap-5">
               <h2 className="text-2xl font-bold text-amber-200 italic">{item.title}</h2>
               <p className="text-xl w-10/12">{item.description}</p>
-              <Link to={`/work/${item.id}`} className="shadow-2xl shadow-slate-700 p-5 rounded-xl bg-amber-950 w-40 text-center">
+              <Link to={`/Portfolio-main/work/${item.id}`} className="shadow-2xl shadow-slate-700 p-5 rounded-xl bg-amber-950 w-40 text-center">
                 Read More
               </Link>
             </div>
