@@ -1,7 +1,7 @@
 const cursor = document.querySelector('.cursor');
 
 function cursorHandler() {
-    if(window.innerWidth < 1000){
+    if(window.innerWidth < 1100){
         cursor.style.display = 'none';
     }else{
     document.addEventListener('mousemove', (e) =>{
